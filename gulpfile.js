@@ -5,6 +5,7 @@ const {
 } = require('gulp')
 const browserSync = require('browser-sync').create()
 const sass = require('gulp-sass')
+const autoprefixer = require('gulp-autoprefixer')
 const minifyCSS = require('gulp-csso')
 const rename = require('gulp-rename')
 
@@ -24,6 +25,7 @@ function bs () {
 function serveSass () {
   return src('./src/sass/*.sass')
     .pipe(sass())
+    .pipe(autoprefixer())
     .pipe(dest('./src/css'))
     .pipe(browserSync.stream())
 }

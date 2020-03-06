@@ -329,10 +329,15 @@ template {
   border-radius: 2px;
   color: #ffffff;
   text-align: center;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-family: "Futura Demi", sans-serif; }
   .button--primary {
-    font-weight: 500;
-    background-color: #E3B873; }
+    background-color: #E3B873;
+    font-size: 13px; }
+  .button--outline {
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    font-size: 13px; }
 
 .header {
   position: fixed;

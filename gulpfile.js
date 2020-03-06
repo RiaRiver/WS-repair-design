@@ -19,11 +19,12 @@ function bs () {
   })
   watch('./src/*.html').on('change', browserSync.reload)
   watch('./src/sass/**/*.sass', serveSass)
+  watch('./src/sass/**/*.scss', serveSass)
   watch('./src/js/*.js').on('change', browserSync.reload)
 }
 
 function serveSass () {
-  return src('./src/sass/*.sass')
+  return src('./src/sass/**/*.sass')
     .pipe(sass())
     .pipe(autoprefixer())
     .pipe(dest('./src/css'))

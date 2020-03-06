@@ -361,6 +361,65 @@ template {
 .contacts__phone {
   margin-right: 45px; }
 
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 100px;
+  background: #131313 url("../img/hero-bg.jpg") no-repeat center/cover;
+  height: 100vh;
+  color: #ffffff; }
+  .hero__instagram {
+    position: absolute;
+    left: 0;
+    top: 0;
+    max-width: 80px;
+    height: 100%; }
+  .hero__scroll-down {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 247px;
+    min-height: 97px;
+    background-color: #131313;
+    font-family: "Yeseva One", cursive;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none; }
+  .hero__content {
+    max-width: 670px; }
+  .hero__text {
+    font-size: 22px;
+    max-width: 500px; }
+  .hero__button {
+    margin-right: 20px; }
+
+.instagram {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #131313; }
+  .instagram__link {
+    text-transform: uppercase;
+    font-family: "Futura Demi", sans-serif;
+    font-size: 14px;
+    color: #E3B873;
+    text-decoration: none;
+    transform: rotate(90deg); }
+
+.title {
+  margin: 0;
+  font-family: "Yeseva One", cursive;
+  font-size: 40px;
+  text-transform: uppercase; }
+  .title--primary {
+    color: #E3B873; }
+
 *, *:before, *:after {
   box-sizing: border-box; }
 

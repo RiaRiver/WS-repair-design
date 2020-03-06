@@ -1,0 +1,65 @@
+.hero
+  position: relative
+  display: flex
+  flex-direction: column
+  justify-content: center
+  padding-top: 100px
+  background: $dark url("../img/hero-bg.jpg") no-repeat center / cover
+  height: 100vh
+  color: $light
+  
+  &__instagram
+    position: absolute
+    left: 0
+    top: 0
+    max-width: 80px
+    height: 100%
+
+  &__scroll-down
+    position: absolute
+    left: 0
+    bottom: 0
+    display: flex
+    justify-content: center
+    align-items: center
+    min-width: 247px
+    min-height: 97px
+    background-color: $dark
+    font-family: $f-heading
+    font-size: 12px
+    text-transform: uppercase
+    color: $light
+    text-decoration: none
+
+  &__content
+    max-width: 670px
+
+  &__text
+    font-size: 22px
+    max-width: 500px
+
+  &__button
+    margin-right: 20px
+
+.instagram
+  display: flex
+  justify-content: center
+  align-items: center
+  background-color: $dark
+
+  &__link
+    text-transform: uppercase
+    font-family: $f-primary
+    font-size: 14px
+    color: $primary
+    text-decoration: none
+    transform: rotate(90deg)
+
+.title
+  margin: 0
+  font-family: $f-heading
+  font-size: 40px
+  text-transform: uppercase
+
+  &--primary
+    color: $primary

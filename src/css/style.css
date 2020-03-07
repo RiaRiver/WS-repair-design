@@ -345,6 +345,14 @@ template {
     background-color: transparent;
     font-size: 13px; }
 
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+body {
+  font-family: "Futura Book", sans-serif;
+  font-size: 14px;
+  font-style: normal; }
+
 .header {
   position: fixed;
   left: 0;
@@ -464,11 +472,3 @@ template {
   text-transform: uppercase; }
   .title--primary {
     color: #E3B873; }
-
-*, *:before, *:after {
-  box-sizing: border-box; }
-
-body {
-  font-family: "Futura Book", sans-serif;
-  font-size: 14px;
-  font-style: normal; }

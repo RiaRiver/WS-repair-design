@@ -1,0 +1,53 @@
+@media screen and ( max-width: 1200px )
+  html
+    font-size: 12px
+  .nav
+    &__item
+      margin-right: 1rem
+
+@media screen and ( max-width: 992px )
+  .nav
+    display: none
+
+  .hero
+    &__instagram
+      display: none
+    &__content
+      margin-left: 0  
+
+@media screen and ( max-width: 576px )
+  .contacts
+    &__phone
+      margin-right: 0
+      text-decoration: none
+      color: $light
+
+    &__button
+      display: none
+  
+  .title
+    margin: 0 0 1.333rem
+    font-size: 1.917rem
+
+  .hero
+    &__text
+      max-width: 26.667rem
+      margin: 0 0 2.667rem
+      font-size: 1.5rem
+
+    &__content
+      max-width: 28.333rem
+    
+    &__button
+      display: block
+      min-width: 100%
+      margin-bottom: 2.167rem 
+
+    &__scroll-down
+      display: none
+    
+@media screen and ( max-height: 600px)
+  .hero
+    &__scroll-down
+      display: none
+    

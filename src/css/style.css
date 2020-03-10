@@ -319,12 +319,11 @@ template {
   display: none; }
 
 .container {
-  width: 85%;
+  width: 90%;
   max-width: 1256px;
   margin: auto; }
 
 .button {
-  padding: 14px 20px;
   font-family: "Futura Demi", sans-serif;
   text-align: center;
   text-transform: uppercase;
@@ -334,14 +333,12 @@ template {
   .button:hover {
     cursor: pointer; }
   .button--primary {
-    font-size: 0.929rem;
     background-color: #E3B873;
     box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
     transition: box-shadow 0.3s; }
     .button--primary:hover {
       box-shadow: none; }
   .button--outline {
-    font-size: 0.929rem;
     background-color: transparent;
     border: 1px solid #ffffff; }
 
@@ -392,7 +389,7 @@ body {
   color: #E3B873; }
 
 .nav__item {
-  margin-right: 2.857rem;
+  margin-right: 2.643rem;
   text-transform: uppercase;
   text-decoration: none;
   color: #ffffff;
@@ -407,6 +404,11 @@ body {
 
 .contacts__phone {
   margin-right: 45px; }
+
+.contacts__button {
+  padding: 13px 20px;
+  font-size: 0.929rem;
+  line-height: 0.714rem; }
 
 .hero {
   position: relative;
@@ -450,7 +452,7 @@ body {
       content: '';
       width: 30px;
       height: 30px;
-      margin-left: 12px;
+      margin-left: 16px;
       background: url("../img/arrow-down.svg") no-repeat center;
       border: 2px solid #E3B873;
       border-radius: 50%; }
@@ -460,10 +462,14 @@ body {
     margin-left: 4.286rem; }
   .hero__text {
     max-width: 35.714rem;
-    margin: 0 0 2.929rem;
-    font-size: 1.571rem; }
+    margin: 0px 0 3.214rem;
+    font-size: 1.571rem;
+    line-height: 1.364; }
   .hero__button {
-    margin-right: 20px; }
+    margin-right: 17px;
+    padding: 18px 22px;
+    font-size: 0.929rem;
+    min-width: 14.786rem; }
 
 .instagram {
   display: flex;
@@ -482,14 +488,15 @@ body {
     .instagram__link::after {
       content: '';
       width: 50px;
-      height: 1px;
-      margin-left: 8px;
+      height: 1.5px;
+      margin-left: 14px;
       background-color: #E3B873; }
 
 .title {
-  margin: 0 0 1.357rem;
+  margin: 0px 0 1.21rem;
   font-family: "Yeseva One", cursive;
   font-size: 2.857rem;
+  line-height: 1.325;
   text-transform: uppercase; }
   .title--primary {
     color: #E3B873; }
@@ -516,7 +523,7 @@ body {
   .contacts__button {
     display: none; }
   .title {
-    margin: 0 0 1.333rem;
+    margin: 0 0 1.167rem;
     font-size: 1.917rem; }
   .hero__text {
     max-width: 26.667rem;
@@ -527,7 +534,8 @@ body {
   .hero__button {
     display: block;
     min-width: 100%;
-    margin-bottom: 2.167rem; }
+    margin-bottom: 2.167rem;
+    font-size: 1.083rem; }
   .hero__scroll-down {
     display: none; } }
 

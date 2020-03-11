@@ -21,7 +21,10 @@ img
     text-transform: uppercase
     
     &__heading
+      margin: 0 0 0.929rem
+      font-weight: normal
       font-size: 1.429rem
+      line-height: 2rem
       color: $dark
 
     &__image
@@ -35,3 +38,50 @@ img
         height: 2px
         margin: 0 10px
         background-color: $primary
+
+.row
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+
+.col
+  flex-basis: 32%
+
+.card
+  &__text
+    position: relative
+    max-width: 23.571rem
+    margin: -9.357rem auto 0
+    padding: 1.786rem 2.143rem 3.929rem
+    background: $light
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03)
+
+  &__title
+    margin: 0 0 0.643rem 
+    font-family: $f-heading
+    font-weight: normal
+    font-size: 1.286rem
+    color: $dark-gray
+
+  &__list
+    padding: 0 0 0 1rem
+    margin: 0
+    font-family: $f-common
+    font-size: 1.071rem
+    line-height: 1.786rem
+    color: $secondary
+  
+  &__pricetag
+    position: absolute
+    left: 0 
+    bottom: 0
+    transform: translateY(50%) /* !Артем, он двигает просто фиксированным значением */
+    display: block
+    min-width: 16.286rem /* !Артем, он делал через паддинг только */
+    font-family: $f-heading
+    font-weight: normal
+    font-size: 1.286rem
+    text-align: center
+    text-transform: uppercase
+    background-color: $primary
+    color: $light

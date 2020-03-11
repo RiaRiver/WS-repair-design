@@ -363,7 +363,10 @@ img {
     text-align: center;
     text-transform: uppercase; }
     .section-title__heading {
+      margin: 0 0 0.929rem;
+      font-weight: normal;
       font-size: 1.429rem;
+      line-height: 2rem;
       color: #131313; }
     .section-title__image {
       display: flex;
@@ -375,6 +378,52 @@ img {
         height: 2px;
         margin: 0 10px;
         background-color: #E3B873; }
+
+.row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between; }
+
+.col {
+  flex-basis: 32%; }
+
+.card__text {
+  position: relative;
+  max-width: 23.571rem;
+  margin: -9.357rem auto 0;
+  padding: 1.786rem 2.143rem 3.929rem;
+  background: #ffffff;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03); }
+
+.card__title {
+  margin: 0 0 0.643rem;
+  font-family: "Yeseva One", cursive;
+  font-weight: normal;
+  font-size: 1.286rem;
+  color: #363636; }
+
+.card__list {
+  padding: 0 0 0 1rem;
+  margin: 0;
+  font-family: "Futura Book", sans-serif;
+  font-size: 1.071rem;
+  line-height: 1.786rem;
+  color: #959595; }
+
+.card__pricetag {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: translateY(50%);
+  display: block;
+  min-width: 16.286rem;
+  font-family: "Yeseva One", cursive;
+  font-weight: normal;
+  font-size: 1.286rem;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #E3B873;
+  color: #ffffff; }
 
 .header {
   position: fixed;
@@ -510,53 +559,35 @@ img {
     color: #E3B873; }
 
 .types__section-title {
-  margin-bottom: 2.143rem; }
+  margin-bottom: 2.214rem; }
 
-.row {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between; }
+.types__pricetag {
+  padding: 1.214rem 1.5rem; }
 
-.col {
-  flex-basis: 32%; }
-
-.card__text {
+.design {
   position: relative;
-  max-width: 23.571rem;
-  margin: -9.071rem auto 0;
-  padding: 1.786rem 2.143rem 3.929rem;
-  background: #ffffff;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03); }
-
-.card__title {
-  margin: 0 0 0.643rem;
-  font-family: "Yeseva One", cursive;
-  font-size: 1.286rem;
-  color: #363636; }
-
-.card__list {
-  padding: 0 0 0 1rem;
-  margin: 0;
-  font-family: "Futura Book", sans-serif;
-  font-size: 1.071rem;
-  line-height: 1.786rem;
-  color: #959595; }
-
-.card__pricetag {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  transform: translateY(50%);
-  display: block;
-  padding: 1.214rem 1.214rem;
-  font-family: "Yeseva One", cursive;
-  font-size: 1.286rem;
-  font-weight: normal;
-  text-align: center;
-  text-transform: uppercase;
-  background-color: #E3B873;
-  color: #ffffff;
-  min-width: 16.286rem; }
+  padding-top: 11rem; }
+  .design__section-title {
+    margin-bottom: 1.286rem; }
+  .design__section-subtitle {
+    max-width: 52.929rem;
+    margin: 0 auto 3.357rem;
+    font-family: "Futura Book", sans-serif;
+    font-size: 1.429rem;
+    line-height: 1.929rem;
+    text-align: center;
+    color: #363636; }
+  .design__pricetag {
+    padding: 1.214rem 2.357rem;
+    text-align: left; }
+  .design__dark-bg {
+    position: absolute;
+    left: 0;
+    bottom: 60px;
+    z-index: -1;
+    width: 100%;
+    height: 30.357rem;
+    background-color: #363636; }
 
 @media screen and (max-width: 1200px) {
   html {
@@ -573,13 +604,38 @@ img {
     margin-left: 0; } }
 
 @media screen and (max-width: 768px) {
+  .section-title__heading {
+    margin-bottom: 1.5rem;
+    font-size: 1.833rem; }
+  .types__section-title {
+    margin-bottom: 3.333rem; }
+  .types__pricetag {
+    padding: 0.917rem 1.333rem; }
+  .design {
+    color: #ffffff;
+    background-color: #131313; }
+    .design__pricetag {
+      padding: 0.917rem 3.75rem; }
+    .design__heading {
+      color: #ffffff; }
+    .design__section-subtitle {
+      max-width: 25.5rem;
+      font-size: 1.25rem;
+      line-height: 1.667rem;
+      color: #ffffff; }
+    .design__dark-bg {
+      display: none; }
   .row {
     flex-direction: column;
     align-items: center; }
-  .types__card {
-    margin-bottom: 5rem; }
   .card__text {
-    margin-left: 0; } }
+    max-width: 22.5rem;
+    margin-left: 0;
+    margin-top: -11.833rem; }
+  .card__pricetag {
+    min-width: 15.875rem; }
+  .types__card, .design__card {
+    margin-bottom: 6.583rem; } }
 
 @media screen and (max-width: 576px) {
   .contacts__phone {

@@ -16,17 +16,54 @@
       margin-left: 0  
 
 @media screen and ( max-width: 768px)
+  .section
+    &-title
+      &__heading
+        margin-bottom: 1.5rem
+        font-size: 1.833rem
+
+  .types
+    &__section-title
+      margin-bottom: 3.333rem
+
+    &__pricetag
+      padding: 0.917rem 1.333rem 
+
+  .design
+    color: $light
+    background-color: $dark
+
+    &__pricetag
+      padding: 0.917rem 3.75rem 
+
+    &__heading, 
+      color: $light
+
+    &__section-subtitle
+      max-width: 25.5rem
+      font-size: 1.25rem
+      line-height: 1.667rem 
+      color: $light
+    
+    &__dark-bg
+      display: none
+
   .row
     flex-direction: column
     align-items: center
-
-  .types
-    &__card
-      margin-bottom: 5rem
   
   .card
     &__text
+      max-width: 22.5rem
       margin-left: 0
+      margin-top: -11.833rem
+      
+    &__pricetag
+      min-width: 15.875rem
+
+  .types, .design
+    &__card
+      margin-bottom: 6.583rem
 
 @media screen and ( max-width: 576px )
   .contacts
@@ -64,4 +101,3 @@
   .hero
     &__scroll-down
       display: none
-      

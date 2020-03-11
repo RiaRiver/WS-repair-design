@@ -353,20 +353,28 @@ body {
   font-size: 1rem;
   font-style: normal; }
 
-.section-title {
-  font-family: "Yeseva One", cursive;
-  text-align: center;
-  text-transform: uppercase; }
-  .section-title__image {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    .section-title__image::before, .section-title__image::after {
-      content: '';
-      width: 32px;
-      height: 2px;
-      margin: 0 10px;
-      background-color: #E3B873; }
+img {
+  max-width: 100%; }
+
+.section {
+  padding: 60px 0; }
+  .section-title {
+    font-family: "Yeseva One", cursive;
+    text-align: center;
+    text-transform: uppercase; }
+    .section-title__heading {
+      font-size: 1.429rem;
+      color: #131313; }
+    .section-title__image {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .section-title__image::before, .section-title__image::after {
+        content: '';
+        width: 32px;
+        height: 2px;
+        margin: 0 10px;
+        background-color: #E3B873; }
 
 .header {
   position: fixed;
@@ -501,6 +509,55 @@ body {
   .title--primary {
     color: #E3B873; }
 
+.types__section-title {
+  margin-bottom: 2.143rem; }
+
+.row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between; }
+
+.col {
+  flex-basis: 32%; }
+
+.card__text {
+  position: relative;
+  max-width: 23.571rem;
+  margin: -9.071rem auto 0;
+  padding: 1.786rem 2.143rem 3.929rem;
+  background: #ffffff;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03); }
+
+.card__title {
+  margin: 0 0 0.643rem;
+  font-family: "Yeseva One", cursive;
+  font-size: 1.286rem;
+  color: #363636; }
+
+.card__list {
+  padding: 0 0 0 1rem;
+  margin: 0;
+  font-family: "Futura Book", sans-serif;
+  font-size: 1.071rem;
+  line-height: 1.786rem;
+  color: #959595; }
+
+.card__pricetag {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: translateY(50%);
+  display: block;
+  padding: 1.214rem 1.214rem;
+  font-family: "Yeseva One", cursive;
+  font-size: 1.286rem;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #E3B873;
+  color: #ffffff;
+  min-width: 16.286rem; }
+
 @media screen and (max-width: 1200px) {
   html {
     font-size: 12px; }
@@ -513,6 +570,15 @@ body {
   .hero__instagram {
     display: none; }
   .hero__content {
+    margin-left: 0; } }
+
+@media screen and (max-width: 768px) {
+  .row {
+    flex-direction: column;
+    align-items: center; }
+  .types__card {
+    margin-bottom: 5rem; }
+  .card__text {
     margin-left: 0; } }
 
 @media screen and (max-width: 576px) {

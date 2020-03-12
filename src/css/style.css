@@ -379,7 +379,7 @@ template {
   opacity: 0;
   visibility: hidden; }
   .policy__checkbox:checked + .policy__label::before {
-    background: #E3B873 url("../../img/check.svg") no-repeat center; }
+    background: #E3B873 url("../img/check.svg") no-repeat center; }
 
 .policy__label {
   display: flex;
@@ -678,7 +678,7 @@ img {
     max-width: 36.357rem;
     padding: 2.357rem 3.5rem 1.929rem;
     color: #ffffff;
-    background: #131313 url("../../img/bg-lines.svg") no-repeat center; }
+    background: #131313 url("../img/bg-lines.svg") no-repeat center; }
   .modal__close {
     position: absolute;
     top: 0;
@@ -686,7 +686,7 @@ img {
     width: 28px;
     height: 28px;
     margin: 12px;
-    background: transparent url("../../img/close.svg") no-repeat center;
+    background: transparent url("../img/close.svg") no-repeat center;
     border: none;
     cursor: pointer; }
   .modal__title {

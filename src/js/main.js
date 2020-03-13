@@ -1,32 +1,29 @@
-document.addEventListener('DOMContentLoaded', function (event) {
-  const modal = document.querySelector('.modal')
-  const modalBtn = document.querySelectorAll('[data-toggle=modal]')
-  const closeBtn = document.querySelector('.modal__close')
+$(document).ready(function () {
+  const modal = $('.modal')
+  const modalBtn = $('[data-toggle=modal]')
+  const closeBtn = $('.modal__close')
+
   const switchModal = () => {
-    modal.classList.toggle('modal--visible')
+    modal.toggleClass('modal--visible')
   }
 
   function isModal () {
-    return modal.classList.contains('modal--visible')
+    return modal.hasClass('modal--visible')
   }
 
-  modalBtn.forEach(element => {
-    element.addEventListener('click', switchModal)
-  })
+  modalBtn.on('click', switchModal)
 
-  closeBtn.addEventListener('click', switchModal)
+  closeBtn.on('click', switchModal)
 
-  document.addEventListener('keydown', (event) => {
-    var key = event.key || event.keyCode
+  $(document).keydown((e) => {
+    var key = e.key || e.keyCode
 
     if ((key === 'Escape' || key === 'Esc' || key === 27) && isModal()) {
       switchModal()
     }
   })
 
-  document.addEventListener('click', (event) => {
-    if (isModal() && event.target.classList.contains('modal')) {
-      switchModal()
-    }
+  modal.click((e) => {
+    if ($(e.target).hasClass('modal')) { switchModal() }
   })
 })

@@ -330,6 +330,20 @@ template {
   max-width: 1256px;
   margin: auto; }
 
+.row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between; }
+
+.col-32 {
+  flex-basis: 32%; }
+
+.col-46 {
+  width: 46%; }
+
+.col-54 {
+  width: 54%; }
+
 .button {
   font-family: "Futura Demi", sans-serif;
   text-align: center;
@@ -411,16 +425,32 @@ img {
 
 .section {
   padding: 60px 0; }
+  .section--dark {
+    background-color: #131313;
+    color: #ffffff; }
   .section-title {
-    font-family: "Yeseva One", cursive;
-    text-align: center;
-    text-transform: uppercase; }
+    text-align: center; }
+    .section-title--left {
+      text-align: left; }
     .section-title__heading {
+      font-family: "Yeseva One", cursive;
+      text-transform: uppercase;
       margin: 0 0 0.929rem;
       font-weight: normal;
       font-size: 1.429rem;
-      line-height: 2rem;
+      line-height: 138%;
       color: #131313; }
+      .section-title__heading--primary {
+        color: #E3B873; }
+    .section-title__word {
+      display: flex;
+      align-items: center; }
+      .section-title__word::after {
+        content: '';
+        width: 92px;
+        height: 1px;
+        background-color: #E3B873;
+        margin-left: 2.5rem; }
     .section-title__image {
       display: flex;
       justify-content: center;
@@ -431,14 +461,12 @@ img {
         height: 2px;
         margin: 0 10px;
         background-color: #E3B873; }
-
-.row {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between; }
-
-.col {
-  flex-basis: 32%; }
+    .section-title__text {
+      font-family: "Futura Book", sans-serif;
+      font-size: 1.286rem;
+      line-height: 2rem;
+      max-width: 31.571rem;
+      margin: 0 0; }
 
 .card__text {
   position: relative;
@@ -611,6 +639,69 @@ img {
   .title--primary {
     color: #E3B873; }
 
+.projects__heading {
+  margin: 0 0 1.71rem;
+  font-weight: normal;
+  font-size: 1.93rem;
+  letter-spacing: -0.07em; }
+
+.projects__title {
+  margin: 0 0 3.29rem; }
+
+.swiper-slide__text-block {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 4.64rem; }
+
+.swiper-slide__text {
+  flex-basis: 32.8%;
+  margin: 0 0 2.57rem; }
+  .swiper-slide__text:nth-of-type(even) {
+    margin-right: 20%; }
+
+.swiper-slide__heading {
+  font-family: "Yeseva One", cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.29rem;
+  line-height: 1.79rem;
+  text-transform: uppercase;
+  color: #E3B873;
+  margin: 0 0 0.43rem; }
+
+.swiper-slide__value {
+  font-family: "Futura Book", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.07rem;
+  line-height: 1.43rem; }
+
+.swiper-pagination-bullet {
+  background-color: #ffffff;
+  width: 9.5px;
+  height: 9.5px; }
+
+.swiper-button-prev, .swiper-button-next {
+  bottom: 0;
+  top: auto;
+  width: 42px;
+  height: 14px; }
+  .swiper-button-prev::after, .swiper-button-next::after {
+    display: none; }
+
+.swiper-button-prev {
+  left: 0;
+  background: url(../img/arrow-prev.svg); }
+
+.swiper-button-next {
+  background: url(../img/arrow-next.svg); }
+
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  width: auto;
+  bottom: 0; }
+  .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 9px; }
+
 .types__section-title {
   margin-bottom: 2.214rem; }
 
@@ -729,6 +820,38 @@ img {
   .section-title__heading {
     margin-bottom: 1.5rem;
     font-size: 1.833rem; }
+  .section-title__word {
+    margin: 0 auto; }
+    .section-title__word::after {
+      display: none; }
+  .section-title__text {
+    font-size: 1.17rem;
+    line-height: 1.84rem;
+    max-width: 25.42rem;
+    margin: 0 0; }
+  .swiper-slide__text-block {
+    margin-bottom: 0.46rem; }
+  .swiper-slide__text {
+    margin: 0 0 2.33rem;
+    flex-basis: 47.5%; }
+    .swiper-slide__text:nth-of-type(n+3) {
+      margin: 0 0 4.08rem; }
+    .swiper-slide__text:nth-of-type(even) {
+      margin-right: 0; }
+  .swiper-slide__heading {
+    margin: 0 0 0.83rem; }
+  .swiper-slide__value {
+    font-size: 1.17rem;
+    line-height: 1.59rem; }
+  .projects__col {
+    width: 100%; }
+    .projects__col:first-child {
+      margin: 0 0 2.83rem; }
+  .projects__heading {
+    margin-bottom: 2.17rem; }
+  .projects__image {
+    max-height: 16.83rem;
+    width: 100%; }
   .types__section-title {
     margin-bottom: 3.333rem; }
   .types__pricetag {

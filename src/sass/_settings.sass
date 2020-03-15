@@ -14,18 +14,39 @@ img
 
 .section
   padding: 60px 0 /** временный отступ, потом удалить **/
-  
+
+  &--dark
+    background-color: $dark
+    color: $light
+
   &-title
-    font-family: $f-heading
     text-align: center
-    text-transform: uppercase
-    
+
+    &--left
+      text-align: left
+      
     &__heading
+      font-family: $f-heading
+      text-transform: uppercase
       margin: 0 0 0.929rem
       font-weight: normal
       font-size: 1.429rem
-      line-height: 2rem
+      line-height: 138%
       color: $dark
+
+      &--primary
+        color: $primary
+      
+    &__word
+      display: flex
+      align-items: center
+
+      &::after
+        content: ''
+        width: 92px
+        height: 1px
+        background-color: $primary
+        margin-left: 2.5rem
 
     &__image
       display: flex
@@ -39,13 +60,14 @@ img
         margin: 0 10px
         background-color: $primary
 
-.row
-  display: flex
-  align-items: flex-start
-  justify-content: space-between
-
-.col
-  flex-basis: 32%
+    &__text
+      font-family: $f-common
+      font-size: 1.286rem
+      line-height: 2rem
+      max-width: 31.571rem
+      margin: 0 0
+  
+  
 
 .card
   &__text

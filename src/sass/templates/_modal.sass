@@ -1,5 +1,5 @@
 .modal
-  opacity: 0 //ЗАЧЕМ
+  opacity: 0 //ЗАЧЕМ: чтобы можно было применить transition 
   visibility: hidden
   position: fixed
   top: 0
@@ -13,18 +13,15 @@
   width: 100%
   height: 100%
   background-color: rgba($dark, 0.6)
-
   &--visible
     opacity: 1
     visibility: visible
-
   &__dialog
     position: relative
-    max-width: 36.357rem
-    padding: 2.357rem 3.5rem 1.929rem
-    color: $light
+    max-width: 36.36rem
+    padding: 2.36rem 3.5rem 1.93rem
     background: $dark url('../img/bg-lines.svg') no-repeat center
-  
+    color: $light
   &__close
     position: absolute
     top: 0
@@ -35,31 +32,25 @@
     background: transparent url('../img/close.svg') no-repeat center
     border: none
     cursor: pointer
-
   &__title
     margin: 0px 0 2rem
     font-family: $f-heading
     font-weight: normal
-    font-size: 1.357rem
-    line-height: 1.857rem
+    font-size: 1.36rem
+    line-height: 1.86rem
     text-align: center
-
   &__form
     display: flex
     flex-direction: column
-    
   &__input
-    margin-bottom: 3.429rem
-
+    margin-bottom: 3.43rem
     &:last-of-type
       margin-bottom: 2px
 
-
   &__policy
-    margin-bottom: 2.786rem
-
+    margin-bottom: 2.79rem
   &__button
     align-self: flex-end
-    padding: 1.286rem 3.286rem
+    padding: 1.29rem 3.29rem
     font-family: $f-primary
-    font-size: 0.929rem
+    font-size: 0.93rem

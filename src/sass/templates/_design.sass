@@ -1,36 +1,25 @@
 .design
   position: relative
   padding-top: 11rem
-    
-  &__section-title
-    margin-bottom: 1.286rem
-
-  &__section-subtitle
-    max-width: 52.929rem
-    margin: 0 auto 3.357rem
-    font-family: $f-common
-    font-size: 1.429rem
-    line-height: 1.929rem
-    text-align: center
-    color: $dark
-
+  &__title
+    margin-bottom: 1.29rem
+  &__subtitle
+    max-width: 52.93rem
+    margin: 0 auto 3.36rem
   &__pricetag
-    padding: 1.214rem 2.357rem
+    padding: 1.21rem 2.36rem
     text-align: left
-
   &__dark-bg
     position: absolute
     left: 0
     bottom: 60px /* Потом исправить на 0, когда уберем отступы у секций*/
     z-index: -1
     width: 100%
-    height: 30.357rem
+    height: 30.36rem
     background-color: $dark
-
   .blackout
     width: 100%
     position: relative
-
     &::before
       content: ''
       position: absolute
@@ -39,6 +28,3 @@
       width: 100%
       height: 100%
       background: rgba(0, 0, 0, 0.3)
-  
-  .card__image
-    width: 100%

@@ -15,79 +15,47 @@
     &__content
       margin-left: 0  
 
+  .card
+    &__image
+      width: auto
+
 @media screen and ( max-width: 768px)
   .section
     &-title
       &__heading
         margin-bottom: 1.5rem
-        font-size: 1.833rem
-      
+        font-size: 1.83rem
       &__word
         margin: 0 auto
         &::after
           display: none
-      
-      &__text
-        font-size: 1.17rem
-        line-height: 1.84rem
-        max-width: 25.42rem
-        margin: 0 0 
-        
-  .swiper
-    &-slide
-      &__text-block
-        margin-bottom: 0.46rem
-      &__text
-        margin: 0 0 2.33rem
-        flex-basis: 47.5%
-        &:nth-of-type(n+3)
-          margin: 0 0 4.08rem
-        &:nth-of-type(even)
-          margin-right: 0
-        
-      &__heading
-        margin: 0 0 0.83rem
-      &__value
-        font-size: 1.17rem
-        line-height: 1.59rem
 
   .projects
     &__col
       width: 100%
       &:first-child
         margin: 0 0 2.83rem
-    &__heading
-      margin-bottom: 2.17rem
-    &__image
-      max-height: 16.83rem
-      width: 100%
 
   .types
-    &__section-title
-      margin-bottom: 3.333rem
-
+    &__title
+      margin-bottom: 3.33rem
     &__pricetag
-      padding: 0.917rem 1.333rem 
+      padding: 0.92rem 1.33rem 
 
   .design
-    color: $light
     background-color: $dark
-
+    color: $light
     &__pricetag
       padding: 0.917rem 3.75rem 
-
-    &__heading, 
+    &__heading 
       color: $light
-
-    &__section-subtitle
+    &__subtitle
       max-width: 25.5rem
       font-size: 1.25rem
-      line-height: 1.667rem 
+      line-height: 1.67rem 
       color: $light
-    
     &__dark-bg
       display: none
-
     .blackout
       &::before
         display: none
@@ -95,19 +63,18 @@
   .row
     flex-direction: column
     align-items: center
-  
+
   .card
     &__text
       max-width: 22.5rem
       margin-left: 0
-      margin-top: -11.833rem
-      
+      margin-top: -11.83rem
     &__pricetag
       min-width: 15.875rem
 
   .types, .design
     &__card
-      margin-bottom: 6.583rem
+      margin-bottom: 6.58rem
 
 @media screen and ( max-width: 576px )
   .contacts
@@ -115,32 +82,62 @@
       margin-right: 0
       text-decoration: none
       color: $light
-
     &__button
       display: none
-  
+
   .title
-    margin: 0 0 1.167rem
-    font-size: 1.917rem 
+    margin: 0 0 1.17rem
+    font-size: 1.92rem 
 
   .hero
     &__text
-      max-width: 26.667rem
-      margin: 0 0 2.667rem
+      max-width: 26.67rem
+      margin: 0 0 2.67rem
       font-size: 1.5rem
-
     &__content
-      max-width: 28.333rem
-    
+      max-width: 28.33rem
     &__button
       display: block
       min-width: 100%
-      margin-bottom: 2.167rem 
-      font-size: 1.083rem
-
+      margin-bottom: 2.17rem 
+      font-size: 1.08rem
     &__scroll-down
       display: none
-    
+
+  .projects
+    padding-top: 3rem
+    &__heading
+      margin-bottom: 2.17rem
+    &__subtitle
+      max-width: 25.42rem
+      margin: 0 0 3.17rem
+      font-size: 1.17rem
+      line-height: 1.84rem
+    &-slide
+      &__text-block
+        margin-bottom: 0.46rem
+      &__text
+        flex-basis: 47.5%
+        margin: 0 0 2.33rem
+        &:nth-of-type(n+3)
+          margin: 0 0 4.08rem
+        &:nth-of-type(even)
+          margin-right: 0
+      &__heading
+        margin: 0 0 0.83rem
+        font-size: 1.17rem
+        line-height: 1.58rem
+      &__value
+        font-size: 1.17rem
+        line-height: 1.59rem
+
+@media screen and ( max-width: 375px )
+  .projects
+    &-slide
+      &__image
+        width: 100% 
+        max-height: 16.83rem
+
 @media screen and ( max-height: 600px)
   .hero
     &__scroll-down

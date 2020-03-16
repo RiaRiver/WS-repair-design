@@ -12,47 +12,48 @@ body
 img
   max-width: 100%
 
+.title
+  font-family: $f-heading
+  font-size: 2.86rem
+  line-height: 1.325
+  text-transform: uppercase
+  &--primary
+    color: $primary
+
 .section
   padding: 60px 0 /** временный отступ, потом удалить **/
-
   &--dark
     background-color: $dark
     color: $light
-
   &-title
     text-align: center
-
     &--left
       text-align: left
-      
     &__heading
+      margin: 0 0 0.93rem
       font-family: $f-heading
       text-transform: uppercase
-      margin: 0 0 0.929rem
       font-weight: normal
-      font-size: 1.429rem
-      line-height: 138%
+      font-size: 1.43rem 
+      line-height: 138.6%
       color: $dark
-
       &--primary
         color: $primary
-      
+
     &__word
       display: flex
       align-items: center
-
       &::after
         content: ''
         width: 92px
         height: 1px
-        background-color: $primary
         margin-left: 2.5rem
+        background-color: $primary
 
     &__image
       display: flex
       justify-content: center
       align-items: center
-      
       &::before, &::after
         content: ''
         width: 32px
@@ -60,50 +61,80 @@ img
         margin: 0 10px
         background-color: $primary
 
-    &__text
-      font-family: $f-common
-      font-size: 1.286rem
-      line-height: 2rem
-      max-width: 31.571rem
-      margin: 0 0
-  
-  
+  &-subtitle
+    font-family: $f-common
+    font-size: 1.43rem
+    line-height: 1.93rem
+    text-align: center
+    color: $dark
+    &--light
+      color: $light
+    &--left
+      text-align: left
 
 .card
+  &__image
+    width: 100%
   &__text
     position: relative
-    max-width: 23.571rem
-    margin: -9.357rem auto 0
-    padding: 1.786rem 2.143rem 3.929rem
+    max-width: 23.57rem
+    margin: -9.36rem auto 0
+    padding: 1.79rem 2.14rem 3.93rem
     background: $light
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03)
-
   &__title
-    margin: 0 0 0.643rem 
+    margin: 0 0 0.64rem 
     font-family: $f-heading
     font-weight: normal
-    font-size: 1.286rem
+    font-size: 1.29rem
     color: $dark
-
   &__list
-    padding: 0 0 0 1rem
     margin: 0
+    padding: 0 0 0 1rem
     font-family: $f-common
-    font-size: 1.071rem
-    line-height: 1.786rem
+    font-size: 1.07rem
+    line-height: 1.79rem
     color: $secondary
-  
   &__pricetag
     position: absolute
     left: 0 
     bottom: 0
     transform: translateY(50%) /* !Артем, он двигает просто фиксированным значением */
     display: block
-    min-width: 16.286rem /* !Артем, он делал через паддинг только */
+    min-width: 16.29rem /* !Артем, он делал через паддинг только */
     font-family: $f-heading
     font-weight: normal
-    font-size: 1.286rem
+    font-size: 1.29rem
     text-align: center
     text-transform: uppercase
     background-color: $primary
     color: $light
+
+.swiper
+  &-pagination
+    &-bullet
+      width: 9.5px
+      height: 9.5px
+      background-color: $light
+
+  &-button
+    &-prev, &-next
+      top: auto
+      bottom: 0
+      width: 42px
+      height: 14px
+      &::after
+        display: none
+
+    &-prev
+      left: 0
+      background: url(../img/arrow-prev.svg)
+    &-next
+      background: url(../img/arrow-next.svg)
+
+.swiper-container-horizontal
+  &>.swiper-pagination-bullets
+    bottom: 0
+    width: auto
+    .swiper-pagination-bullet
+      margin: 0 9px

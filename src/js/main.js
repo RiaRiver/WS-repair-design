@@ -28,16 +28,32 @@ $(document).ready(function () {
   })
 
   // initialize swiper when document ready
-  var mySwiper = new Swiper('.swiper-container', {
+  // eslint-disable-next-line no-undef, no-unused-vars
+  var mySwiper = new Swiper('.swiper1-container', {
     // Optional parameters
     loop: true,
     pagination: {
-      el: '.swiper-pagination',
+      el: '.swiper1-pagination',
       type: 'bullets'
     },
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev'
+      nextEl: '.swiper1-button-next',
+      prevEl: '.swiper1-button-prev'
+    }
+
+  })
+
+  var mySwiper2 = new Swiper('.swiper2-container', {
+    // Optional parameters
+    loop: true,
+    pagination: {
+      el: '.swiper2-pagination',
+      type: 'bullets'
+    },
+  
+    navigation: {
+      nextEl: '.swiper2-button-next',
+      prevEl: '.swiper2-button-prev'
     }
 
   })

@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 $(document).ready(function () {
   const modal = $('.modal')
   const modalBtn = $('[data-toggle=modal]')
@@ -29,39 +30,79 @@ $(document).ready(function () {
 
   // initialize swiper when document ready
   // eslint-disable-next-line no-undef, no-unused-vars
-  var mySwiper = new Swiper('.swiper1-container', {
-    // Optional parameters
+  var progectsSwiper = new Swiper('.projects__swiper-container', {
+  // Optional parameters
+    spaceBetween: 5,
     loop: true,
     pagination: {
-      el: '.swiper1-pagination',
+      el: '.projects__swiper-pagination',
       type: 'bullets'
     },
     navigation: {
-      nextEl: '.swiper1-button-next',
-      prevEl: '.swiper1-button-prev'
+      nextEl: '.projects__swiper-button-next',
+      prevEl: '.projects__swiper-button-prev'
     }
 
   })
 
-  var mySwiper2 = new Swiper('.swiper2-container', {
-    // Optional parameters
+  var stepsSwiper1 = new Swiper('.steps__swiper1-container', {
     loop: true,
     pagination: {
-      el: '.swiper2-pagination',
+      el: '.steps__swiper1-pagination',
+      type: 'fraction',
+      renderFraction: function (currentClass, totalClass) {
+        return '<span class="' + currentClass + '"></span>' +
+                '/' +
+                '<span class="' + totalClass + '"></span>'
+      }
+    }
+  })
+
+  var stepsSwiper2 = new Swiper('.steps__swiper2-container', {
+    spaceBetween: 5,
+    loop: true,
+    pagination: {
+      el: '.steps__swiper2-pagination',
       type: 'bullets'
     },
-  
     navigation: {
-      nextEl: '.swiper2-button-next',
-      prevEl: '.swiper2-button-prev'
+      nextEl: '.steps__swiper2-button-next',
+      prevEl: '.steps__swiper2-button-prev'
+    }
+  })
+
+  var stepsSwiper3 = new Swiper('.steps__swiper3-container', {
+    spaceBetween: 5,
+    loop: true,
+    pagination: {
+      el: '.steps__swiper3-pagination',
+      clickable: true,
+      renderBullet: function (index, className) {
+        return '<div class="' + className + ' steps-tab">' + '<h3 class="steps-tab__heading">' + ('00000' + (index + 1)).slice(-2) + '</h3>' + '<span class="steps-tab__value">' + $(stepsSwiper2.slides[index + 1]).find('h3').html() + '</span>' + '</div>'
+      }
     }
 
+  })
+
+  stepsSwiper1.controller.control = [stepsSwiper2]
+  stepsSwiper2.controller.control = [stepsSwiper3]
+
+  stepsSwiper3.on('slideChange', function () {
+    stepsSwiper1.slideTo(stepsSwiper3.activeIndex)
   })
 
   var next = $('.swiper-button-next')
   var prev = $('.swiper-button-prev')
-  var bullets = $('.swiper-pagination')
+  var bullets = $('.swiper-pagination-bullets')
 
-  next.css('left', prev.width() + 20 + bullets.width() + 20)
-  bullets.css('left', prev.width() + 20)
+  next.each((index, element) => {
+    var nextJq = $(element)
+    var prevJq = $(prev[index])
+    var bulletsJq = $(bullets[index])
+    var margin = 20
+    nextJq.css('left', prevJq.width() + margin + bulletsJq.width() + margin)
+    bulletsJq.css('left', prevJq.width() + margin)
+  })
+
+  $('.steps__swiper1-container').css('height', $('.steps__swiper1-pagination').height())
 })

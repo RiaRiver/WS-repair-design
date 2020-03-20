@@ -111,11 +111,22 @@ img
     color: $light
 
 .swiper
+  &-container
+    width: 100%
+
+  &-slide
+    &--hidden
+      visibility: hidden
+      width: 
+      height: 
   &-pagination
     &-bullet
       width: 9.5px
       height: 9.5px
       background-color: $light
+      opacity: .3
+      &-active
+        opacity: 1
 
   &-button
     &-prev, &-next
@@ -133,7 +144,7 @@ img
       background: url(../img/arrow-next.svg)
 
 .swiper-container-horizontal
-  &>.swiper-pagination-bullets
+  &>.swiper-pagination-bullets, .swiper-pagination-fraction
     bottom: 0
     width: auto
     .swiper-pagination-bullet

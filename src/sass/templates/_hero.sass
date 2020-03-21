@@ -1,22 +1,17 @@
 .hero
   position: relative
-  display: flex
-  flex-direction: column
-  justify-content: center
   height: 100vh
-  padding-top: 100px
+  padding: rem(83px) 0 rem(48.5px) rem(80px)
   color: $light
-  background: $dark url("../img/hero-bg.jpg") no-repeat center / cover
-  &::before
+  &::after
     content: ''
     position: absolute
-    top: 0
+    bottom: 0
     left: 0
     width: 100%
-    height: 100%
-    background-color: rgba($dark, 0.7)
-  &__title
-    margin: 0px 0 1.21rem
+    height: rem(48.5px)
+    background-color: $dark
+    
   &__instagram
     position: absolute
     left: 0
@@ -25,14 +20,14 @@
     height: 100%
   &__scroll-down
     position: absolute
+    z-index: 3
     left: 0
     bottom: 0
-    transform: translateY(50%)
     display: flex
     justify-content: center
     align-items: center
     min-width: 17.64rem
-    min-height: 6.93rem
+    min-height: rem(97px) 
     font-family: $f-heading
     font-size: 0.86rem
     text-transform: uppercase
@@ -50,8 +45,27 @@
 
   &__content
     position: relative
-    max-width: 47.86rem
-    margin-left: 4.29rem
+    display: flex
+    padding-left: rem(55px)
+    flex-direction: column
+    justify-content: center
+    height: 100%
+    background: $dark url("../img/hero-bg.jpg") no-repeat center / cover
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background-color: rgba($dark, 0.7)
+    &-wrapper
+      position: relative
+      max-width: 47.86rem
+    
+  &__title
+    position: relative
+    margin: 0px 0 1.21rem
   &__text
     max-width: 35.71rem
     margin: 0px 0 3.21rem

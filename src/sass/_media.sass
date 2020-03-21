@@ -9,8 +9,8 @@
     &__col
       width: 50%
     &__heading
-    font-size: mrem(27px)
-    line-height: mrem(37px)
+      font-size: mrem(27px)
+      line-height: mrem(37px)
     &__subtitle
       font-size: mrem(15px)
       line-height: mrem(21px)
@@ -38,6 +38,7 @@
     display: none
 
   .hero
+    padding-left: 0
     &__instagram
       display: none
     &__content
@@ -124,13 +125,18 @@
     font-size: 1.92rem 
 
   .hero
+    padding-top: rem(55px)
     &__text
       margin-bottom: mrem(29px)
       max-width: 26.67rem
       margin: 0 0 2.67rem
       font-size: 1.5rem
     &__content
-      max-width: 28.33rem
+      align-items: center
+      padding-left: 0
+      &-wrapper
+        max-width: 28.33rem
+    
     &__button
       display: block
       min-width: 100%
@@ -240,5 +246,7 @@
 
 @media screen and ( max-height: 600px)
   .hero
+    padding-bottom: 0
+    &::after,
     &__scroll-down
       display: none

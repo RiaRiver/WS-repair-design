@@ -107,7 +107,10 @@
   .steps
     display: none
 
+
 @media screen and ( max-width: 576px )
+  .container
+    width: 91%
   .contacts
     &__phone
       margin-right: 0
@@ -122,6 +125,7 @@
 
   .hero
     &__text
+      margin-bottom: mrem(29px)
       max-width: 26.67rem
       margin: 0 0 2.67rem
       font-size: 1.5rem
@@ -162,12 +166,77 @@
         font-size: 1.17rem
         line-height: 1.59rem
 
+  .control
+    background-color: $dark
+    &__title
+      margin-bottom: mrem(40px)
+    &__video
+      margin-bottom: mrem(25px)
+    &__text
+      margin-bottom: mrem(27px)
+      max-width: 100%
+      font-size: mrem(14px)
+      line-height: mrem(24px)
+      color: $light
+      &::before
+        margin-bottom: mrem(15px)
+
+    &__input-group
+      flex-basis: 100%
+    &__label
+      font-size: mrem(15px)
+      line-height: mrem(20px)
+    &__input
+      font-size: mrem(18px)
+      line-height: mrem(25px)
+      margin-bottom: mrem(59px)
+      &:last-of-type
+        margin-bottom: mrem(8px)
+    &__policy
+      margin-top: 0
+      &-label
+        font-size: mrem(16px)
+        line-height: mrem(22px)
+    &__button
+      order: 1
+      min-width: mrem(340px)
+      margin: auto
+      font-size: mrem(15px)
+      line-height: mrem(26px) 
+  .video
+    &__play
+      width: mrem(37px)
+      height: mrem(37px)
+  .label
+    &--m-light
+      color: rgba($light, 0.5)
+
+  .input
+    &--m-light
+      color: $light
+      border-bottom: 1px solid rgba($light, 0.15)
+      &::placeholder
+        color: $light
+  .policy
+    margin-bottom: mrem(62.5px)
+    &__label
+      justify-content: flex-start
+      color: $light
+      
+
 @media screen and ( max-width: 375px )
   .projects
     &-slide
       &__image
         width: 100% 
         max-height: 16.83rem
+
+  .control
+    &__video
+      min-height: mrem(210px)
+    &__button
+      min-width: 0
+      width: 100%
 
 @media screen and ( max-height: 600px)
   .hero

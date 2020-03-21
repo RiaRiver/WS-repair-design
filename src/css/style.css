@@ -373,28 +373,47 @@ template {
 
 .label {
   font-family: "Futura Book", sans-serif;
-  font-size: 1.07rem; }
+  font-size: 1.07143rem;
+  line-height: 1.42857rem;
+  margin-bottom: -0.35714rem; }
   .label--light {
     color: rgba(255, 255, 255, 0.5); }
+  .label--dark {
+    color: rgba(19, 19, 19, 0.5); }
 
 .input {
   padding: 0.5rem 0;
-  font-family: "Futura Medium", sans-serif;
-  font-size: 1.29rem;
+  font-family: "Futura Book", sans-serif;
+  font-size: 1.28571rem;
+  line-height: 1.78571rem;
   background-color: transparent;
-  color: #ffffff;
-  border: none;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.15); }
-  .input--light::-webkit-input-placeholder {
-    color: #ffffff; }
-  .input--light::-moz-placeholder {
-    color: #ffffff; }
-  .input--light:-ms-input-placeholder {
-    color: #ffffff; }
-  .input--light::-ms-input-placeholder {
-    color: #ffffff; }
-  .input--light::placeholder {
-    color: #ffffff; }
+  border: none; }
+  .input--light {
+    color: #ffffff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15); }
+    .input--light::-webkit-input-placeholder {
+      color: #ffffff; }
+    .input--light::-moz-placeholder {
+      color: #ffffff; }
+    .input--light:-ms-input-placeholder {
+      color: #ffffff; }
+    .input--light::-ms-input-placeholder {
+      color: #ffffff; }
+    .input--light::placeholder {
+      color: #ffffff; }
+  .input--dark {
+    color: #131313;
+    border-bottom: 1px solid rgba(19, 19, 19, 0.3); }
+    .input--dark::-webkit-input-placeholder {
+      color: #131313; }
+    .input--dark::-moz-placeholder {
+      color: #131313; }
+    .input--dark:-ms-input-placeholder {
+      color: #131313; }
+    .input--dark::-ms-input-placeholder {
+      color: #131313; }
+    .input--dark::placeholder {
+      color: #131313; }
 
 .policy__checkbox {
   opacity: 0;
@@ -415,6 +434,10 @@ template {
     border: 1px solid #E3B873;
     border-radius: 1px;
     cursor: pointer; }
+
+.form__button {
+  padding: 1.28571rem 1.42857rem;
+  font-family: "Futura Demi", sans-serif; }
 
 *, *:before, *:after {
   box-sizing: border-box; }
@@ -744,7 +767,7 @@ img {
   margin-bottom: 4.46429rem;
   max-width: 58.35714rem;
   min-height: 31rem;
-  background: #131313 url("../img/video-bg.jpg") center no-repeat;
+  background: #131313 url("../img/video-bg.jpg") center/cover no-repeat;
   box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.15); }
   .control__video::before {
     position: absolute;
@@ -754,13 +777,13 @@ img {
     background-color: rgba(0, 0, 0, 0.8); }
 
 .control__text {
-  max-width: 40.78571rem;
+  max-width: 40.71429rem;
   margin: auto;
   margin-bottom: 4.28571rem;
   font-family: "Futura Book", sans-serif;
   font-weight: normal;
   font-size: 1.42857rem;
-  line-height: 2.42857rem;
+  line-height: 2.46429rem;
   text-align: center; }
   .control__text::before {
     display: block;
@@ -770,7 +793,7 @@ img {
     border-radius: 30px;
     background-color: #E3B873;
     margin: auto;
-    margin-bottom: 2.5rem; }
+    margin-bottom: 1.92857rem; }
 
 .control__form {
   display: flex;
@@ -784,11 +807,18 @@ img {
   flex-direction: column;
   flex-basis: 30%; }
 
+.control__label {
+  margin-bottom: -0.64286rem; }
+
 .control__policy {
   flex-basis: 100%;
-  margin-top: 2.35714rem; }
+  margin-top: 1.07143rem; }
   .control__policy-label {
     justify-content: center; }
+
+.control__button {
+  font-size: 1.07143rem;
+  min-width: 14.28571rem; }
 
 .video__play {
   position: relative;
@@ -986,18 +1016,19 @@ img {
     text-align: center; }
   .modal__form {
     display: flex;
+    display: flex;
     flex-direction: column; }
   .modal__input {
-    margin-bottom: 3.43rem; }
+    font-family: "Futura Medium", sans-serif;
+    margin-bottom: 3.21429rem; }
     .modal__input:last-of-type {
-      margin-bottom: 2px; }
+      margin-bottom: -2px; }
   .modal__policy {
     margin-bottom: 2.79rem; }
   .modal__button {
     align-self: flex-end;
-    padding: 1.29rem 3.29rem;
-    font-family: "Futura Demi", sans-serif;
-    font-size: 0.93rem; }
+    min-width: 15.21429rem;
+    font-size: 0.92857rem; }
 
 @media screen and (max-width: 1200px) {
   html {
@@ -1085,6 +1116,8 @@ img {
     display: none; } }
 
 @media screen and (max-width: 576px) {
+  .container {
+    width: 91%; }
   .contacts__phone {
     margin-right: 0;
     text-decoration: none;
@@ -1095,6 +1128,7 @@ img {
     margin: 0 0 1.17rem;
     font-size: 1.92rem; }
   .hero__text {
+    margin-bottom: 2.41667rem;
     max-width: 26.67rem;
     margin: 0 0 2.67rem;
     font-size: 1.5rem; }
@@ -1131,12 +1165,76 @@ img {
       line-height: 1.58rem; }
     .projects-slide__value {
       font-size: 1.17rem;
-      line-height: 1.59rem; } }
+      line-height: 1.59rem; }
+  .control {
+    background-color: #131313; }
+    .control__title {
+      margin-bottom: 3.33333rem; }
+    .control__video {
+      margin-bottom: 2.08333rem; }
+    .control__text {
+      margin-bottom: 2.25rem;
+      max-width: 100%;
+      font-size: 1.16667rem;
+      line-height: 2rem;
+      color: #ffffff; }
+      .control__text::before {
+        margin-bottom: 1.25rem; }
+    .control__input-group {
+      flex-basis: 100%; }
+    .control__label {
+      font-size: 1.25rem;
+      line-height: 1.66667rem; }
+    .control__input {
+      font-size: 1.5rem;
+      line-height: 2.08333rem;
+      margin-bottom: 4.91667rem; }
+      .control__input:last-of-type {
+        margin-bottom: 0.66667rem; }
+    .control__policy {
+      margin-top: 0; }
+      .control__policy-label {
+        font-size: 1.33333rem;
+        line-height: 1.83333rem; }
+    .control__button {
+      order: 1;
+      min-width: 28.33333rem;
+      margin: auto;
+      font-size: 1.25rem;
+      line-height: 2.16667rem; }
+  .video__play {
+    width: 3.08333rem;
+    height: 3.08333rem; }
+  .label--m-light {
+    color: rgba(255, 255, 255, 0.5); }
+  .input--m-light {
+    color: #ffffff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15); }
+    .input--m-light::-webkit-input-placeholder {
+      color: #ffffff; }
+    .input--m-light::-moz-placeholder {
+      color: #ffffff; }
+    .input--m-light:-ms-input-placeholder {
+      color: #ffffff; }
+    .input--m-light::-ms-input-placeholder {
+      color: #ffffff; }
+    .input--m-light::placeholder {
+      color: #ffffff; }
+  .policy {
+    margin-bottom: 5.20833rem; }
+    .policy__label {
+      justify-content: flex-start;
+      color: #ffffff; } }
 
 @media screen and (max-width: 375px) {
   .projects-slide__image {
     width: 100%;
-    max-height: 16.83rem; } }
+    max-height: 16.83rem; }
+  .control__video {
+    min-height: 17.5rem; }
+  .control__button {
+    min-width: 0;
+    width: 100%; } }
 
 @media screen and (max-height: 600px) {
   .hero__scroll-down {

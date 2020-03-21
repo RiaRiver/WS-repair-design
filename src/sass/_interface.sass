@@ -21,21 +21,31 @@
 
 .label
   font-family: $f-common
-  font-size: 1.07rem 
+  font-size: rem(15px)
+  line-height: rem(20px) 
+  margin-bottom: rem(-5px)
   &--light
     color: rgba($light, 0.5)
+  &--dark
+    color: rgba($dark, 0.5)
 
 .input
   padding: 0.5rem 0
-  font-family: $f-secondary
-  font-size: 1.29rem
+  font-family: $f-common
+  font-size: rem(18px)
+  line-height: rem(25px)
   background-color: transparent
-  color: $light
   border: none
-  border-bottom: 1px solid rgba($light, 0.15)
   &--light
+    color: $light
+    border-bottom: 1px solid rgba($light, 0.15)
     &::placeholder
       color: $light
+  &--dark 
+    color: $dark
+    border-bottom: 1px solid rgba($dark, 0.3)
+    &::placeholder
+      color: $dark
 
 .policy
   &__checkbox
@@ -59,3 +69,8 @@
       border: 1px solid $primary
       border-radius: 1px
       cursor: pointer
+
+.form
+  &__button
+    padding: rem(18px) rem(20px) 
+    font-family: $f-primary

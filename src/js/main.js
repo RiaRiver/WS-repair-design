@@ -105,4 +105,6 @@ $(document).ready(function () {
   })
 
   $('.steps-swiper1').css('height', $('.steps-swiper1-pagination').height())
+
+  new WOW().init()
 })

@@ -30,25 +30,25 @@ $(document).ready(function () {
 
   // initialize swiper when document ready
   // eslint-disable-next-line no-undef, no-unused-vars
-  var progectsSwiper = new Swiper('.projects__swiper-container', {
+  var progectsSwiper = new Swiper('.projects-swiper', {
   // Optional parameters
     spaceBetween: 5,
     loop: true,
     pagination: {
-      el: '.projects__swiper-pagination',
+      el: '.projects-swiper-pagination',
       type: 'bullets'
     },
     navigation: {
-      nextEl: '.projects__swiper-button-next',
-      prevEl: '.projects__swiper-button-prev'
+      nextEl: '.projects-swiper-button-next',
+      prevEl: '.projects-swiper-button-prev'
     }
 
   })
 
-  var stepsSwiper1 = new Swiper('.steps__swiper1-container', {
+  var stepsSwiper1 = new Swiper('.steps-swiper1', {
     loop: true,
     pagination: {
-      el: '.steps__swiper1-pagination',
+      el: '.steps-swiper1-pagination',
       type: 'fraction',
       renderFraction: function (currentClass, totalClass) {
         return '<span class="' + currentClass + '"></span>' +
@@ -58,24 +58,24 @@ $(document).ready(function () {
     }
   })
 
-  var stepsSwiper2 = new Swiper('.steps__swiper2-container', {
+  var stepsSwiper2 = new Swiper('.steps-swiper2', {
     spaceBetween: 5,
     loop: true,
     pagination: {
-      el: '.steps__swiper2-pagination',
+      el: '.steps-swiper2-pagination',
       type: 'bullets'
     },
     navigation: {
-      nextEl: '.steps__swiper2-button-next',
-      prevEl: '.steps__swiper2-button-prev'
+      nextEl: '.steps-swiper2-button-next',
+      prevEl: '.steps-swiper2-button-prev'
     }
   })
 
-  var stepsSwiper3 = new Swiper('.steps__swiper3-container', {
+  var stepsSwiper3 = new Swiper('.steps-swiper3', {
     spaceBetween: 5,
     loop: true,
     pagination: {
-      el: '.steps__swiper3-pagination',
+      el: '.steps-swiper3-pagination',
       clickable: true,
       renderBullet: function (index, className) {
         return '<div class="' + className + ' steps-tab">' + '<h3 class="steps-tab__heading">' + ('00000' + (index + 1)).slice(-2) + '</h3>' + '<span class="steps-tab__value">' + $(stepsSwiper2.slides[index + 1]).find('h3').html() + '</span>' + '</div>'
@@ -104,5 +104,5 @@ $(document).ready(function () {
     bulletsJq.css('left', prevJq.width() + margin)
   })
 
-  $('.steps__swiper1-container').css('height', $('.steps__swiper1-pagination').height())
+  $('.steps-swiper1').css('height', $('.steps-swiper1-pagination').height())
 })

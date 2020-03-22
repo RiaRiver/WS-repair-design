@@ -1,0 +1,40 @@
+.footer
+  background: $black url('../img/footer-bg.png') center/cover no-repeat
+  &__menu
+    background-color: $black
+    padding: rem(48px) 0
+  &__wrap
+    background-color: $black
+    max-width: rem(883px)
+    margin: auto
+    padding: rem(35px) 0
+  &__title
+    font-family: $f-heading
+    font-weight: normal
+    font-size: 20px  //в мобильной такой же
+    line-height: 28px //в мобильной такой же
+    text-align: center
+    text-transform: uppercase
+    margin: 0 0 rem(43px)
+  &__form
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    max-width: rem(520px)
+    margin: auto
+  &__input
+    padding: 4px 0
+    &-group
+      display: flex
+      flex-direction: column
+      flex-basis: 45%
+      margin-bottom: rem(47px)
+      &--full-width
+        flex-basis: 100%
+      &--last
+        margin-bottom: rem(28px)
+  &__policy
+    flex-basis: 100%
+    margin-bottom: rem(49px)
+  &__button
+    margin: auto

@@ -108,6 +108,7 @@
   .steps
     display: none
 
+  .footer
 
 @media screen and ( max-width: 576px )
   .container
@@ -228,7 +229,21 @@
     &__label
       justify-content: flex-start
       color: $light
-      
+
+  .footer
+    background-image: none   
+    &__input
+      &-group
+        flex-basis: 100%
+        margin: 0 0 mrem(61px)
+        &--last
+          margin: 0 0 5px
+    &__title
+      margin: 0 0 mrem(49px)
+    &__policy
+      margin-bottom: mrem(65px)
+    &__button
+      width: 100%
 
 @media screen and ( max-width: 375px )
   .projects

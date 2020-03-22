@@ -21,9 +21,9 @@
 
 .label
   font-family: $f-common
-  font-size: rem(15px)
-  line-height: rem(20px) 
-  margin-bottom: rem(-5px)
+  font-size: $fz15 //одинаковые во всем проекте
+  line-height: $lh20 //одинаковые во всем проекте
+  margin-bottom: -6px
   &--light
     color: rgba($light, 0.5)
   &--dark
@@ -32,8 +32,8 @@
 .input
   padding: 0.5rem 0
   font-family: $f-common
-  font-size: rem(18px)
-  line-height: rem(25px)
+  font-size: $fz18
+  line-height: $lh24
   background-color: transparent
   border: none
   &--light
@@ -60,7 +60,11 @@
     display: flex
     align-items: center
     font-family: $f-common
-    font-size: 1.14rem
+    font-style: normal
+    font-weight: normal
+    font-size: $fz16 //одинаковые во всем проекте
+    line-height: $lh22 //одинаковые во всем проекте
+    color: $light
     &::before
       content: ''
       width: 18px
@@ -69,8 +73,17 @@
       border: 1px solid $primary
       border-radius: 1px
       cursor: pointer
-
+    &--black
+      color: $black
+    &--center
+      justify-content: center
 .form
-  &__button
-    padding: rem(18px) rem(20px) 
+  &__button //отличаются в модальном и сложной секции
+    min-width: 200px
+    min-height: 51px
+    padding: 17px 20px
     font-family: $f-primary
+    text-transform: uppercase
+    color: $light
+    text-align: center
+    font-size: $fz15

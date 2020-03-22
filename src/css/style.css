@@ -1,3 +1,71 @@
+@-webkit-keyframes slideLeft {
+  0% {
+    opacity: 0;
+    transform: translate3d(2000px, 0, 0); }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0); } }
+
+@keyframes slideLeft {
+  0% {
+    opacity: 0;
+    transform: translate3d(2000px, 0, 0); }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0); } }
+
+@-webkit-keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 1000px, 0); }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0); } }
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 1000px, 0); }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0); } }
+
+@-webkit-keyframes pulse {
+  0% {
+    transform: scale(1); }
+  25% {
+    transform: scale(1.1); }
+  50% {
+    transform: scale(1); }
+  75% {
+    transform: scale(1.1); }
+  100% {
+    transform: scale(1); } }
+
+@keyframes pulse {
+  0% {
+    transform: scale(1); }
+  25% {
+    transform: scale(1.1); }
+  50% {
+    transform: scale(1); }
+  75% {
+    transform: scale(1.1); }
+  100% {
+    transform: scale(1); } }
+
+.active.slideLeft {
+  -webkit-animation: slideLeft 1s linear forwards;
+          animation: slideLeft 1s linear forwards; }
+
+.active.slideUp {
+  -webkit-animation: slideUp 1s linear forwards;
+          animation: slideUp 1s linear forwards; }
+
+.active.pulse {
+  -webkit-animation: pulse 2s linear forwards;
+          animation: pulse 2s linear forwards; }
+
 @font-face {
   font-family: "Futura Book";
   src: url("../fonts/futura/FuturaBookC.woff") format("woff"), url("../fonts/futura/FuturaBookC.woff2") format("woff2");

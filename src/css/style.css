@@ -675,6 +675,7 @@ img {
       border: 2px solid #E3B873;
       border-radius: 50%; }
   .hero__content {
+    overflow-x: hidden;
     position: relative;
     display: flex;
     padding-left: 3.92857rem;

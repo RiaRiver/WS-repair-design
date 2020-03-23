@@ -106,4 +106,43 @@ $(document).ready(function () {
 
   $('.steps-swiper1').css('height', $('.steps-swiper1-pagination').height())
 
+  // Маски полей
+  $('[type=tel]').mask('+7 (000) 000-00-00')
+
+  // Валидация формы
+  $.validator.messages.required = 'Заполните поле'
+
+  $('.form').each(function () {
+    $(this).validate({
+      rules: {
+        userName: {
+          required: true,
+          minlength: 2,
+          maxlength: 15
+        },
+        userPhone: {
+          required: true,
+          minlength: 18
+        },
+        userEmail: {
+          required: true,
+          email: true
+        },
+        userQuestion: { required: true }
+      },
+      // Сообщения
+      messages: {
+        userName: {
+          minlength: 'Имя должно быть не короче двух букв',
+          maxlength: 'Имя должно быть не длиннее 15 букв'
+        },
+        userPhone: {
+          minlength: 'Заполните поле'
+        },
+        userEmail: {
+          email: 'Введите корректный email'
+        }
+      }
+    })
+  })
 })

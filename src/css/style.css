@@ -527,6 +527,14 @@ template {
   text-align: center;
   font-size: 15px; }
 
+label.error {
+  color: tomato;
+  padding: 4px 0;
+  font-size: 14px; }
+
+input.error {
+  border-bottom: 1px solid tomato; }
+
 *, *:before, *:after {
   box-sizing: border-box; }
 

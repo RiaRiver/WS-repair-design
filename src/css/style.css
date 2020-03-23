@@ -407,6 +407,9 @@ template {
 .col-27 {
   width: 27%; }
 
+.col-29 {
+  flex-basis: 29%; }
+
 .col-32 {
   flex-basis: 32%; }
 
@@ -567,12 +570,11 @@ img {
   .section-title--left {
     text-align: left; }
   .section-title__heading {
-    margin: 0 0 0.93rem;
+    margin: 0 0 13px;
     font-family: "Yeseva One", cursive;
     text-transform: uppercase;
     font-weight: normal;
-    font-size: 1.43rem;
-    line-height: 138.6%;
+    font-size: 20px;
     color: #131313; }
     .section-title__heading--primary {
       color: #E3B873; }
@@ -598,10 +600,29 @@ img {
       margin: 0 10px;
       background-color: #E3B873; }
 
+.section__text {
+  max-width: 570px;
+  margin: auto;
+  margin-bottom: 4.28571rem;
+  font-family: "Futura Book", sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 34.5px;
+  text-align: center; }
+  .section__text::before {
+    display: block;
+    content: '';
+    width: 55px;
+    height: 1.5px;
+    border-radius: 30px;
+    background-color: #E3B873;
+    margin: auto;
+    margin-bottom: 1.92857rem; }
+
 .section-subtitle {
   font-family: "Futura Book", sans-serif;
-  font-size: 1.43rem;
-  line-height: 1.93rem;
+  font-size: 20px;
+  line-height: 27px;
   text-align: center;
   color: #131313; }
   .section-subtitle--light {
@@ -614,18 +635,28 @@ img {
 
 .card__text {
   position: relative;
-  max-width: 23.57rem;
-  margin: -9.36rem auto 0;
-  padding: 1.79rem 2.14rem 3.93rem;
-  background: #ffffff;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03); }
+  background: #ffffff; }
+  .card__text--list {
+    max-width: 23.57rem;
+    margin: -131px auto 0;
+    padding: 25px 30px 55px; }
+  .card__text--center {
+    text-align: center; }
 
 .card__title {
-  margin: 0 0 0.64rem;
+  margin: 0 0 9px;
   font-family: "Yeseva One", cursive;
   font-weight: normal;
-  font-size: 1.29rem;
+  font-size: 18px;
   color: #131313; }
+
+.card__subtitle {
+  display: block;
+  margin: 0 0 22px;
+  font-family: "Futura Book", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  color: #959595; }
 
 .card__list {
   margin: 0;
@@ -635,7 +666,7 @@ img {
   line-height: 1.79rem;
   color: #959595; }
 
-.card__pricetag {
+.card__tag {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -644,11 +675,14 @@ img {
   min-width: 16.29rem;
   font-family: "Yeseva One", cursive;
   font-weight: normal;
-  font-size: 1.29rem;
   text-align: center;
   text-transform: uppercase;
   background-color: #E3B873;
   color: #ffffff; }
+
+.card .types__card-text,
+.card .design__card-text {
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03); }
 
 .swiper-container {
   width: 100%; }
@@ -886,25 +920,6 @@ img {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8); }
 
-.control__text {
-  max-width: 40.71429rem;
-  margin: auto;
-  margin-bottom: 4.28571rem;
-  font-family: "Futura Book", sans-serif;
-  font-weight: normal;
-  font-size: 1.42857rem;
-  line-height: 2.46429rem;
-  text-align: center; }
-  .control__text::before {
-    display: block;
-    content: '';
-    width: 55px;
-    height: 2px;
-    border-radius: 30px;
-    background-color: #E3B873;
-    margin: auto;
-    margin-bottom: 1.92857rem; }
-
 .control__form {
   display: flex;
   justify-content: space-between;
@@ -936,7 +951,7 @@ img {
 .types__title {
   margin-bottom: 2.21rem; }
 
-.types__pricetag {
+.types__tag {
   padding: 1.21rem 1.5rem; }
 
 .design {
@@ -947,8 +962,9 @@ img {
   .design__subtitle {
     max-width: 52.93rem;
     margin: 0 auto 3.36rem; }
-  .design__pricetag {
+  .design__tag {
     padding: 1.21rem 2.36rem;
+    font-size: 18px;
     text-align: left; }
   .design__dark-bg {
     position: absolute;
@@ -970,117 +986,159 @@ img {
       height: 100%;
       background: rgba(0, 0, 0, 0.3); }
 
-.steps__row {
-  align-items: stretch; }
-
-.steps__heading {
-  margin: 0 0 6.07143rem;
-  font-size: 1.92857rem;
-  line-height: 2.64286rem; }
-
-.steps__word::after {
-  margin-left: 6.21429rem; }
-
-.steps__subtitle {
-  display: block;
-  margin: 0 0 1rem;
-  font-family: "Futura Demi", sans-serif;
-  font-size: 1.07143rem;
-  line-height: 1.5rem;
-  text-transform: uppercase; }
-
-.steps-swiper1 {
-  width: 100%;
-  height: 40px;
-  margin-bottom: 1.35714rem; }
-  .steps-swiper1-pagination {
-    font-family: "Yeseva One", cursive;
-    font-weight: normal;
-    font-size: 1.28571rem;
-    line-height: 1.78571rem;
-    text-transform: uppercase; }
-
-.steps-swiper2-slide__text {
-  margin-bottom: 6.42857rem; }
-
-.steps-swiper2-slide__heading {
-  margin: 0 0 9px;
-  max-width: 18.57143rem;
-  font-family: "Yeseva One", cursive;
-  font-size: 1.07143rem;
-  line-height: 1.64286rem;
-  text-transform: uppercase;
-  color: #E3B873; }
-
-.steps-swiper2-slide__value {
-  max-width: 337px;
-  margin: 0 0 12px;
-  font-family: "Futura Book", sans-serif;
-  font-size: 1.07143rem;
-  line-height: 1.78571rem;
-  color: #ffffff; }
-
-.steps-swiper3 {
-  padding-top: 6.5rem; }
-  .steps-swiper3-slide .image-cover {
-    position: relative;
-    width: 100%;
-    padding-top: 50%; }
-  .steps-swiper3-slide__image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%; }
-
-.steps-tabs {
-  position: static;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  -moz-text-align-last: left;
-       text-align-last: left;
-  margin: 0 0 0.57143rem; }
-
-.steps-tab {
-  width: 18%;
-  display: block;
-  height: auto;
-  border-radius: 0;
-  background-color: transparent; }
-  .steps-tab:focus {
-    outline: none; }
-  .steps-tab__heading {
-    margin: 0 0 0.71429rem;
-    display: inline-block;
-    position: relative;
-    font-weight: normal;
-    font-family: "Yeseva One", cursive;
+.steps {
+  padding-bottom: 502px; }
+  .steps__row {
+    align-items: stretch; }
+  .steps__heading {
+    margin: 0 0 6.07143rem;
+    font-size: 1.92857rem;
+    line-height: 2.64286rem; }
+  .steps__word::after {
+    margin-left: 6.21429rem; }
+  .steps__subtitle {
+    display: block;
+    margin: 0 0 1rem;
+    font-family: "Futura Demi", sans-serif;
     font-size: 1.07143rem;
     line-height: 1.5rem;
+    text-transform: uppercase; }
+  .steps-swiper1 {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 1.35714rem; }
+    .steps-swiper1-pagination {
+      font-family: "Yeseva One", cursive;
+      font-weight: normal;
+      font-size: 1.28571rem;
+      line-height: 1.78571rem;
+      text-transform: uppercase; }
+  .steps-swiper2-slide__text {
+    margin-bottom: 6.42857rem; }
+  .steps-swiper2-slide__heading {
+    margin: 0 0 9px;
+    max-width: 18.57143rem;
+    font-family: "Yeseva One", cursive;
+    font-size: 1.07143rem;
+    line-height: 1.64286rem;
     text-transform: uppercase;
-    color: #ffffff; }
-    .steps-tab__heading::after {
-      content: '';
-      width: 100%;
-      height: 1px;
-      background-color: #E3B873;
-      display: block;
-      position: absolute;
-      bottom: 0;
-      left: 0; }
-  .steps-tab__value {
-    text-align: left;
-    display: block;
+    color: #E3B873; }
+  .steps-swiper2-slide__value {
+    max-width: 337px;
+    margin: 0 0 12px;
     font-family: "Futura Book", sans-serif;
     font-size: 1.07143rem;
-    line-height: 1.28571rem;
+    line-height: 1.78571rem;
     color: #ffffff; }
+  .steps-swiper3 {
+    padding-top: 6.5rem; }
+    .steps-swiper3-slide .image-cover {
+      position: relative;
+      width: 100%;
+      padding-top: 50%; }
+    .steps-swiper3-slide__image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+  .steps-tabs {
+    position: static;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    -moz-text-align-last: left;
+         text-align-last: left;
+    margin: 0 0 0.57143rem; }
+  .steps-tab {
+    width: 18%;
+    display: block;
+    height: auto;
+    border-radius: 0;
+    background-color: transparent; }
+    .steps-tab:focus {
+      outline: none; }
+    .steps-tab__heading {
+      margin: 0 0 0.71429rem;
+      display: inline-block;
+      position: relative;
+      font-weight: normal;
+      font-family: "Yeseva One", cursive;
+      font-size: 1.07143rem;
+      line-height: 1.5rem;
+      text-transform: uppercase;
+      color: #ffffff; }
+      .steps-tab__heading::after {
+        content: '';
+        width: 100%;
+        height: 1px;
+        background-color: #E3B873;
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0; }
+    .steps-tab__value {
+      text-align: left;
+      display: block;
+      font-family: "Futura Book", sans-serif;
+      font-size: 1.07143rem;
+      line-height: 1.28571rem;
+      color: #ffffff; }
 
 .swiper-container-horizontal > .swiper-pagination-bullets .steps-tab {
   margin: 0 0 3rem 23%; }
   .swiper-container-horizontal > .swiper-pagination-bullets .steps-tab:nth-of-type(3n+1) {
     margin-left: 0; }
+
+.team__title {
+  margin: -406px 0 20px; }
+
+.team__heading {
+  color: #ffffff; }
+
+.team__subtitle {
+  max-width: 450px;
+  margin: 0 auto 47px;
+  color: #ffffff; }
+
+.team__row {
+  position: relative;
+  right: 16px;
+  max-width: 1063px;
+  margin: 0 auto 53px; }
+
+.team__card {
+  padding: 35px 0 0 35px; }
+  .team__card-text {
+    margin: -87px auto 0;
+    max-width: 233px;
+    padding: 22px 0 0;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05); }
+  .team__card-image-wrapper {
+    position: relative; }
+
+.team__icon {
+  position: absolute;
+  top: -35px;
+  left: -35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  background-color: #E3B873;
+  box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.5); }
+
+.team__tag {
+  position: static;
+  font-size: 13px;
+  width: 100%;
+  min-height: 44px;
+  padding: 13px 15px;
+  transform: none; }
+
+.team__text::before {
+  margin-bottom: 10px; }
 
 .footer {
   background: #181818 url("../img/footer-bg.png") center/cover no-repeat; }
@@ -1218,17 +1276,18 @@ img {
     .hero__instagram {
       display: none; }
     .hero__content {
-      margin-left: 0; }
-  .card__image {
-    width: auto; } }
+      margin-left: 0; } }
 
 @media screen and (max-width: 768px) {
-  .section-title__heading {
+  .types__heading,
+  .design__heading {
     margin-bottom: 1.5rem;
     font-size: 1.83rem; }
-  .section-title__word {
+  .types__word,
+  .design__word {
     margin: 0 auto; }
-    .section-title__word::after {
+    .types__word::after,
+    .design__word::after {
       display: none; }
   .projects__col {
     width: 100%; }
@@ -1236,12 +1295,12 @@ img {
       margin: 0 0 2.83rem; }
   .types__title {
     margin-bottom: 3.33rem; }
-  .types__pricetag {
+  .types__tag {
     padding: 0.92rem 1.33rem; }
   .design {
     background-color: #131313;
     color: #ffffff; }
-    .design__pricetag {
+    .design__tag {
       padding: 0.917rem 3.75rem; }
     .design__heading {
       color: #ffffff; }
@@ -1257,16 +1316,30 @@ img {
   .row {
     flex-direction: column;
     align-items: center; }
-  .card__text {
+  .types__card-text, .design__card-text {
     max-width: 22.5rem;
     margin-left: 0;
     margin-top: -11.83rem; }
-  .card__pricetag {
+  .types__card-tag, .design__card-tag {
     min-width: 15.875rem; }
   .types__card, .design__card {
     margin-bottom: 6.58rem; }
   .steps {
-    display: none; } }
+    display: none; }
+  .team {
+    padding-top: 96px; }
+    .team__row {
+      right: 0; }
+    .team__col {
+      width: 75%; }
+    .team__title {
+      margin-top: 0; }
+    .team__heading {
+      color: #181818; }
+    .team__subtitle {
+      color: #181818; }
+    .team__text {
+      display: none; } }
 
 @media screen and (max-width: 576px) {
   .container {
@@ -1386,7 +1459,20 @@ img {
     .footer__policy {
       margin-bottom: 68px; }
     .footer__button {
-      width: 100%; } }
+      width: 100%; }
+  .team {
+    background-color: #181818; }
+    .team__col {
+      width: 100%; }
+    .team__heading {
+      font-size: 22px;
+      color: #ffffff; }
+    .team__subtitle {
+      font-size: 15px;
+      line-height: 20px;
+      color: #ffffff; }
+    .team__card {
+      margin-bottom: 76px; } }
 
 @media screen and (max-width: 375px) {
   .projects-slide__image {

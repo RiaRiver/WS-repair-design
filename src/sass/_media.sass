@@ -44,20 +44,16 @@
     &__content
       margin-left: 0  
 
-  .card
-    &__image
-      width: auto
-
 @media screen and ( max-width: 768px)
-  .section
-    &-title
-      &__heading
-        margin-bottom: 1.5rem
-        font-size: 1.83rem
-      &__word
-        margin: 0 auto
-        &::after
-          display: none
+  .types,
+  .design 
+    &__heading
+      margin-bottom: 1.5rem
+      font-size: 1.83rem
+    &__word
+      margin: 0 auto
+      &::after
+        display: none
 
   .projects
     &__col
@@ -68,13 +64,13 @@
   .types
     &__title
       margin-bottom: 3.33rem
-    &__pricetag
+    &__tag
       padding: 0.92rem 1.33rem 
 
   .design
     background-color: $dark
     color: $light
-    &__pricetag
+    &__tag
       padding: 0.917rem 3.75rem 
     &__heading 
       color: $light
@@ -92,14 +88,14 @@
   .row
     flex-direction: column
     align-items: center
-
-  .card
-    &__text
-      max-width: 22.5rem
-      margin-left: 0
-      margin-top: -11.83rem
-    &__pricetag
-      min-width: 15.875rem
+  .types, .design
+    &__card
+      &-text
+        max-width: 22.5rem
+        margin-left: 0
+        margin-top: -11.83rem
+      &-tag
+        min-width: 15.875rem
 
   .types, .design
     &__card
@@ -108,7 +104,20 @@
   .steps
     display: none
 
-  .footer
+  .team
+    padding-top: 96px
+    &__row
+      right: 0
+    &__col
+      width: 75%
+    &__title
+      margin-top: 0
+    &__heading
+      color: $black
+    &__subtitle
+      color: $black
+    &__text
+      display: none
 
 @media screen and ( max-width: 576px )
   .container
@@ -234,13 +243,28 @@
         flex-basis: 100%
         margin: 0 0 60px ////Не менять: отличается на 1 от контрола
         &--last
-              margin: 0px 0 21px  // Не менять: отличается от контрола
+          margin: 0px 0 21px  // Не менять: отличается от контрола
     &__title
       margin: 0 0 mrem(49px)
     &__policy
-          margin-bottom: 68px //Не менять: отличается от контрола
+      margin-bottom: 68px //Не менять: отличается от контрола
     &__button
       width: 100%
+
+  .team
+    background-color: $black
+    &__col
+      width: 100%
+
+    &__heading
+      font-size: $fz22
+      color: $light
+    &__subtitle
+      font-size: $fz15
+      line-height: $lh20
+      color: $light
+    &__card
+      margin-bottom: 76px
 
 @media screen and ( max-width: 375px )
   .projects
@@ -255,6 +279,8 @@
     &__button
       min-width: 0
       width: 100%
+  
+ 
 
 @media screen and ( max-height: 600px)
   .hero

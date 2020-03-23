@@ -31,17 +31,16 @@ img
       text-align: left
   
     &__heading
-      margin: 0 0 0.93rem
+      margin: 0 0 13px
       font-family: $f-heading
       text-transform: uppercase
       font-weight: normal
-      font-size: 1.43rem 
-      line-height: 138.6%
+      font-size: $fz20
       color: $dark
       &--primary
         color: $primary
       &--light
-          color: $light
+        color: $light
           
     &__word
       display: flex
@@ -52,7 +51,6 @@ img
         height: 1px
         margin-left: 2.5rem
         background-color: $primary
-
     &__image
       display: flex
       justify-content: center
@@ -64,10 +62,29 @@ img
         margin: 0 10px
         background-color: $primary
 
+  &__text
+    max-width: 570px
+    margin: auto
+    margin-bottom: rem(60px)
+    font-family: $f-common
+    font-weight: normal
+    font-size: $fz20
+    line-height: $lh34-5
+    text-align: center
+    &::before
+      display: block
+      content: ''
+      width: 55px
+      height: 1.5px
+      border-radius: 30px
+      background-color: $primary
+      margin: auto
+      margin-bottom: rem(27px)
+
   &-subtitle
     font-family: $f-common
-    font-size: 1.43rem
-    line-height: 1.93rem
+    font-size: $fz20 
+    line-height: $lh27
     text-align: center
     color: $dark
     &--light
@@ -80,17 +97,27 @@ img
     width: 100%
   &__text
     position: relative
-    max-width: 23.57rem
-    margin: -9.36rem auto 0
-    padding: 1.79rem 2.14rem 3.93rem
     background: $light
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03)
+
+    &--list
+      max-width: 23.57rem
+      margin: -131px auto 0
+      padding: 25px 30px 55px
+    &--center
+      text-align: center
   &__title
-    margin: 0 0 0.64rem 
+    margin: 0 0 9px  
     font-family: $f-heading
     font-weight: normal
-    font-size: 1.29rem
+    font-size: $fz18
     color: $dark
+  &__subtitle
+    display: block
+    margin: 0 0 22px
+    font-family: $f-common
+    font-weight: normal
+    font-size: $fz18
+    color: $secondary
   &__list
     margin: 0
     padding: 0 0 0 1rem
@@ -98,7 +125,7 @@ img
     font-size: 1.07rem
     line-height: 1.79rem
     color: $secondary
-  &__pricetag
+  &__tag
     position: absolute
     left: 0 
     bottom: 0
@@ -107,11 +134,15 @@ img
     min-width: 16.29rem /* !Артем, он делал через паддинг только */
     font-family: $f-heading
     font-weight: normal
-    font-size: 1.29rem
     text-align: center
     text-transform: uppercase
     background-color: $primary
     color: $light
+  .types,
+  .design
+    &__card
+      &-text
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03)
 
 .swiper
   &-container

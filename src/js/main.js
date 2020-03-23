@@ -114,6 +114,8 @@ $(document).ready(function () {
 
   $('.form').each(function () {
     $(this).validate({
+      errorElement: 'div',
+      errorClass: 'invalid',
       rules: {
         userName: {
           required: true,

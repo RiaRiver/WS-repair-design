@@ -527,12 +527,12 @@ template {
   text-align: center;
   font-size: 15px; }
 
-label.error {
+div.invalid {
   color: tomato;
   padding: 4px 0;
   font-size: 14px; }
 
-input.error {
+input.invalid {
   border-bottom: 1px solid tomato; }
 
 *, *:before, *:after {

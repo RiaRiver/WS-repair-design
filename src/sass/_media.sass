@@ -113,6 +113,7 @@
 @media screen and ( max-width: 576px )
   .container
     width: 91%
+
   .contacts
     &__phone
       margin-right: 0
@@ -180,7 +181,7 @@
     &__video
       margin-bottom: mrem(25px)
     &__text
-      margin-bottom: mrem(27px)
+      margin-bottom: 28px 
       max-width: 100%
       font-size: mrem(14px)
       line-height: mrem(24px)
@@ -188,21 +189,16 @@
       &::before
         margin-bottom: mrem(15px)
 
-    &__input-group
-      flex-basis: 100%
-    &__label
-      font-size: mrem(15px)
     &__input
-      font-size: mrem(18px)
-      line-height: mrem(25px)
       &-group
-        margin-bottom: 57px
+        flex-basis: 100%
+        margin-bottom: 61px //Не менять: отличается на 1 от футера
         &--last
-          margin-bottom: 23px
+          margin-bottom: 26px // Не менять: отличается от футера
 
     &__policy
       margin-top: 0
-      margin-bottom: 61px
+      margin-bottom: 63px //Не менять: отличается от футера
       &-label
         font-size: mrem(16px)
 
@@ -236,13 +232,13 @@
     &__input
       &-group
         flex-basis: 100%
-        margin: 0 0 mrem(61px)
+        margin: 0 0 60px ////Не менять: отличается на 1 от контрола
         &--last
-          margin: 0px 0 20px
+              margin: 0px 0 21px  // Не менять: отличается от контрола
     &__title
       margin: 0 0 mrem(49px)
     &__policy
-      margin-bottom: mrem(65px)
+          margin-bottom: 68px //Не менять: отличается от контрола
     &__button
       width: 100%
 

@@ -441,8 +441,7 @@ template {
 
 .label {
   font-family: "Futura Book", sans-serif;
-  font-size: 15px;
-  margin-bottom: -3px; }
+  font-size: 15px; }
   .label--light {
     color: rgba(255, 255, 255, 0.5); }
   .label--dark {
@@ -452,7 +451,6 @@ template {
   padding: 7px 0;
   font-family: "Futura Book", sans-serif;
   font-size: 18px;
-  line-height: 24px;
   background-color: transparent;
   border: none; }
   .input--light {
@@ -908,16 +906,14 @@ img {
   margin: auto; }
 
 .control__input-group {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 30%; }
+  flex-basis: 30%;
+  margin: 0 0 37px; }
 
 .control__label {
-  margin-bottom: -0.64286rem; }
+  margin-bottom: -5px; }
 
 .control__policy {
-  flex-basis: 100%;
-  margin-top: 32px; }
+  flex-basis: 100%; }
   .control__policy-label {
     justify-content: center; }
 
@@ -1102,18 +1098,18 @@ img {
     justify-content: space-between;
     max-width: 37.14286rem;
     margin: auto; }
-  .footer__input {
-    padding: 4px 0; }
-    .footer__input-group {
-      flex-basis: 45%;
-      margin-bottom: 3.35714rem; }
-      .footer__input-group--full-width {
-        flex-basis: 100%; }
-      .footer__input-group--last {
-        margin-bottom: 45px; }
+  .footer__input-group {
+    flex-basis: 45%;
+    margin-bottom: 46px; }
+    .footer__input-group--full-width {
+      flex-basis: 100%; }
+    .footer__input-group--last {
+      margin-bottom: 46px; }
+  .footer__label {
+    margin-bottom: -4px; }
   .footer__policy {
     flex-basis: 100%;
-    margin-bottom: 3.5rem; }
+    margin-bottom: 51px; }
   .footer__button {
     margin: auto; }
 
@@ -1152,7 +1148,7 @@ img {
     border: none;
     cursor: pointer; }
   .modal__title {
-    margin: 0px 0 2rem;
+    margin: 0px 0 30px;
     font-family: "Yeseva One", cursive;
     font-weight: normal;
     font-size: 1.36rem;
@@ -1165,11 +1161,13 @@ img {
   .modal__input {
     font-family: "Futura Medium", sans-serif; }
     .modal__input-group {
-      margin-bottom: 3.21429rem; }
+      margin-bottom: 47px; }
       .modal__input-group--last {
-        margin-bottom: 12px; }
+        margin-bottom: 16px; }
+  .modal__label {
+    margin-bottom: -2px; }
   .modal__policy {
-    margin-bottom: 37px; }
+    margin-bottom: 39px; }
   .modal__button {
     align-self: flex-end;
     min-width: 15.21429rem;
@@ -1325,7 +1323,7 @@ img {
     .control__video {
       margin-bottom: 2.08333rem; }
     .control__text {
-      margin-bottom: 2.25rem;
+      margin-bottom: 28px;
       max-width: 100%;
       font-size: 1.16667rem;
       line-height: 2rem;
@@ -1333,19 +1331,13 @@ img {
       .control__text::before {
         margin-bottom: 1.25rem; }
     .control__input-group {
-      flex-basis: 100%; }
-    .control__label {
-      font-size: 1.25rem; }
-    .control__input {
-      font-size: 1.5rem;
-      line-height: 2.08333rem; }
-      .control__input-group {
-        margin-bottom: 57px; }
-        .control__input-group--last {
-          margin-bottom: 23px; }
+      flex-basis: 100%;
+      margin-bottom: 61px; }
+      .control__input-group--last {
+        margin-bottom: 26px; }
     .control__policy {
       margin-top: 0;
-      margin-bottom: 61px; }
+      margin-bottom: 63px; }
       .control__policy-label {
         font-size: 1.33333rem; }
     .control__button {
@@ -1378,13 +1370,13 @@ img {
     background-image: none; }
     .footer__input-group {
       flex-basis: 100%;
-      margin: 0 0 5.08333rem; }
+      margin: 0 0 60px; }
       .footer__input-group--last {
-        margin: 0px 0 20px; }
+        margin: 0px 0 21px; }
     .footer__title {
       margin: 0 0 4.08333rem; }
     .footer__policy {
-      margin-bottom: 5.41667rem; }
+      margin-bottom: 68px; }
     .footer__button {
       width: 100%; } }
 

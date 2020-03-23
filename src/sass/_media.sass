@@ -192,24 +192,26 @@
       flex-basis: 100%
     &__label
       font-size: mrem(15px)
-      line-height: mrem(20px)
     &__input
       font-size: mrem(18px)
       line-height: mrem(25px)
-      margin-bottom: mrem(59px)
-      &:last-of-type
-        margin-bottom: mrem(8px)
+      &-group
+        margin-bottom: 57px
+        &--last
+          margin-bottom: 23px
+
     &__policy
       margin-top: 0
+      margin-bottom: 61px
       &-label
         font-size: mrem(16px)
-        line-height: mrem(22px)
+
     &__button
       order: 1
       min-width: mrem(340px)
       margin: auto
       font-size: mrem(15px)
-      line-height: mrem(26px) 
+
   .video
     &__play
       width: mrem(37px)
@@ -225,7 +227,6 @@
       &::placeholder
         color: $light
   .policy
-    margin-bottom: mrem(62.5px)
     &__label
       justify-content: flex-start
       color: $light
@@ -237,7 +238,7 @@
         flex-basis: 100%
         margin: 0 0 mrem(61px)
         &--last
-          margin: 0 0 5px
+          margin: 0px 0 20px
     &__title
       margin: 0 0 mrem(49px)
     &__policy

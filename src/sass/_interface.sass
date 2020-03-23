@@ -22,15 +22,14 @@
 .label
   font-family: $f-common
   font-size: $fz15 //одинаковые во всем проекте
-  line-height: $lh20 //одинаковые во всем проекте
-  margin-bottom: -6px
+  margin-bottom: -3px //выверенно, без минуса никак
   &--light
     color: rgba($light, 0.5)
   &--dark
     color: rgba($dark, 0.5)
 
 .input
-  padding: 0.5rem 0
+  padding: 7px 0
   font-family: $f-common
   font-size: $fz18
   line-height: $lh24
@@ -46,9 +45,18 @@
     border-bottom: 1px solid rgba($dark, 0.3)
     &::placeholder
       color: $dark
-
+  &:focus
+    outline: none
+    border-bottom: 1px solid $primary
+  &-group 
+    display: flex
+    flex-direction: column
 .policy
+  position: relative
   &__checkbox
+    position: absolute
+    top: 0
+    left: 0
     opacity: 0
     visibility: hidden
     &:checked +
@@ -63,7 +71,6 @@
     font-style: normal
     font-weight: normal
     font-size: $fz16 //одинаковые во всем проекте
-    line-height: $lh22 //одинаковые во всем проекте
     color: $light
     &::before
       content: ''

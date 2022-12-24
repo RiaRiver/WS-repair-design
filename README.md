@@ -1,2 +1,3 @@
 # WS-repair-design
-Сайт по ремонту, разработанный в процессе курса WebStart
+WebStart: training project created during the course  
+Home design and repair company website
